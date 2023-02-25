@@ -5,6 +5,10 @@
 
   ==============================================================================
 */
+/*
+TODO
+ Should we play a sound?
+ */
 
 #pragma once
 
@@ -57,6 +61,7 @@ public:
     void setStateInformation (const void* data, int sizeInBytes) override;
 
 private:
+    bool shouldPlaySound = false;
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (PFMProject0AudioProcessor)
 };
